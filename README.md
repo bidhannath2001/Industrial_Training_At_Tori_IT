@@ -10,28 +10,6 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.0+-orange.svg)
 
 ---
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Quick Start](#quick-start)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Database Schema](#database-schema)
-- [API Endpoints](#api-endpoints)
-- [Authentication](#authentication)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-
----
-
 ## 🎯 Overview
 
 Zapmor is a full-featured healthcare platform backend that enables patients to:
