@@ -1,10 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 # 🏥 Zapmor - Healthcare Appointment Booking Platform
 
 **A comprehensive RESTful API for healthcare appointment booking, featuring doctor consultations, clinic management, and beauty/wellness services.**
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![PHP](https://img.shields.io/badge/PHP-8.0+-purple.svg)
 ![Laravel](https://img.shields.io/badge/Laravel-10+-red.svg)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0+-orange.svg)
@@ -121,9 +119,17 @@ zapmor-api/
 ├── composer.json                 # PHP dependencies
 └── README.md                     # This file
 ```
-
 ---
+### ER Diagram
 
+<p align="center">
+  <img src="./zapmor-er-diagram-hd.png" alt="Zapmor ER Diagram" width="100%">
+</p>
+
+<p align="center">
+  <i>Entity Relationship Diagram of the Zapmor database</i>
+</p>
+---
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -196,18 +202,7 @@ php artisan key:generate
 
 ### Step 4: Database Setup
 
-#### Create MySQL Database
-
-```bash
-mysql -u root -p
-
-# In MySQL:
-CREATE DATABASE zapmor_dev CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'zapmor_user'@'localhost' IDENTIFIED BY 'strong_password';
-GRANT ALL PRIVILEGES ON zapmor_dev.* TO 'zapmor_user'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;
-```
+#### Create MySQL Database named 'zapmor_dev'
 
 #### Configure .env
 
@@ -245,7 +240,7 @@ Server runs at: `http://localhost:8000`
 
 ```bash
 # Test API connectivity
-curl http://localhost:8000/api/doctor/
+curl http://localhost:8000/api/doctors/
 
 # Should return JSON response with doctors list
 ```
@@ -334,10 +329,6 @@ Saloon-Appointments → Users (many-to-one)
 Saloon-Appointments → Organizations (many-to-one)
 Saloon-Appointments → Saloon-Services (many-to-one)
 ```
-
-**ER Diagram:** See `diagrams/zapmor-er-diagram-hd.png` for visual representation.
-
----
 
 ## 🔌 API Endpoints
 
